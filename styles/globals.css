@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
